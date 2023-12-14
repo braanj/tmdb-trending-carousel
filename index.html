@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="movies">
+    <h2>The trending movies today</h2>
+  </div>
+
+  <small>
+    <a href="https://github.com/braanj">
+      <i style="font-size:24px" class="fa">&#xf09b;</i> braanj
+    </a>
+  </small>
+
+  <script src="./tmdb.js"></script>
+  <script>
+    window.onload = function () {
+      tmdb.setOptions({
+        endpoint: 'movie', // movie or tv
+        targetId: 'movies',
+        apiKey: 'add-your-tmdb-api-key-here'
+      })
+    }
+  </script>
+</body>
+
+</html>
