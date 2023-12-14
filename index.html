@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>TMDb Movie Carousel</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div id="movies">
+  <div id="tmdb">
     <h2>The trending movies today</h2>
   </div>
 
@@ -20,13 +20,13 @@
     </a>
   </small>
 
-  <script src="./tmdb.js"></script>
+  <script src="./tmdb-movie-carousel.js"></script>
   <script>
     window.onload = function () {
       tmdb.setOptions({
         endpoint: 'movie', // movie or tv
-        targetId: 'movies',
-        apiKey: 'add-your-tmdb-api-key-here'
+        targetId: 'tmdb',
+        apiKey: 'YOUR_TMDB_API_KEY'
       })
     }
   </script>

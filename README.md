@@ -1,5 +1,7 @@
 # TMDb Movie Carousel
 
+<img alt="TMDB movie carousel' cover" src="./cover.png">
+
 ## Overview
 
 The TMDb Movie Carousel script is designed to fetch trending movies from the TMDb (The Movie Database) API and display them in a responsive carousel on an HTML page. The script utilizes the Swiper library for carousel functionality.
@@ -82,16 +84,6 @@ This function initializes the Swiper carousel with specified configurations.
       content="width=device-width, initial-scale=1.0"
     />
     <title>TMDb Movie Carousel</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
-    <style>
-      /* Custom styles here */
-    </style>
   </head>
   <body>
     <div id="tmdb"></div>
@@ -102,7 +94,6 @@ This function initializes the Swiper carousel with specified configurations.
         endpoint: 'movie',
         targetId: 'tmdb',
       });
-      tmdb.render();
     </script>
   </body>
 </html>
