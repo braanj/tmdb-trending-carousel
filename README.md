@@ -91,7 +91,7 @@ This function initializes the Swiper carousel with specified configurations.
     <script>
       tmdb.setOptions({
         apiKey: 'YOUR_TMDB_API_KEY',
-        endpoint: 'movie',
+        endpoint: 'movie', // movie or tv
         targetId: 'tmdb',
       });
     </script>
